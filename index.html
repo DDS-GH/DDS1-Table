@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://uicore.dellcdn.com/1.6.1/css/dds-reboot.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://uicore.dellcdn.com/1.6.1/css/dds-all-with-fonts.css"
+    />
+    <script src="https://uicore.dellcdn.com/1.6.1/js/dds-all.min.js"></script>
+  </head>
+
+  <body>
+    <div class="dds__container">
+      <span style="opacity: 0.5">
+        <button id="updateData" class="dds__btn dds__btn-secondary">
+          Update Data
+        </button>
+        &nbsp;
+        <button id="noData" class="dds__btn dds__btn-secondary">No Data</button>
+        &nbsp;
+        <button id="logRows" class="dds__btn dds__btn-secondary">
+          console.log selected Rows
+        </button>
+        These are broken
+      </span>
+      <!-- <p>
+        In the data being used for this table, on init OR update, the first row
+        will ALWAYS have the same Order ID, to demonstrate reselecting the
+        checkbox if checked, after update.
+      </p> -->
+      <hr />
+
+      <!-- BEGIN table component-->
+      <table
+        data-table="dds__table"
+        class="dds__table dds__table-hover dds__table-cmplx dds__table-striped"
+      >
+        <caption class="dds__sr-only">
+          A Complex Tables
+          <span>Table used to display User information</span>
+        </caption>
+      </table>
+      <nav
+        class="dds__pagination dds__pagination-justified-filter"
+        data-toggle="dds__pagination"
+        aria-label="pagination"
+      ></nav>
+      <!-- END table component-->
+    </div>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
